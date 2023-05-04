@@ -118,9 +118,9 @@ function IndexModal() {
       </div>
     </div>
     {
-          modalData.status==='waiting'&&(<button disabled={disabled} className="bg-blue w-full text-white rounded-xl p-2 text-center font-semibold cursor-pointer mt-2" onClick={()=>updateWaiting()}>Update Status</button>)}
+          modalData.status==='waiting'&&(<button disabled={disabled} className="bg-blue w-full text-white rounded-xl p-2 text-center font-semibold cursor-pointer mt-2" onClick={()=>updateWaiting()}>Ready to serve</button>)}
         {
-          modalData.status==='ready to serve'&&(<button disabled={disabled} className="bg-blue w-full text-white rounded-xl p-2 text-center font-semibold cursor-pointer mt-2" onClick={()=>updateReadyToServe()}>Update Status</button>)}
+          modalData.status==='ready to serve'&&(<button disabled={disabled} className="bg-blue w-full text-white rounded-xl p-2 text-center font-semibold cursor-pointer mt-2" onClick={()=>updateReadyToServe()}>Served</button>)}
     {
       modalData.status==='served'&&(
         <>
