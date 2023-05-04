@@ -114,9 +114,9 @@ function OrderListModal() {
           </div>
         </div>
         {
-          orderListModalData.status==='waiting'&&(<button disabled={disabled} className="bg-blue w-full text-white rounded-xl p-2 text-center font-semibold cursor-pointer mt-2" onClick={()=>updateWaiting()}>Update Status</button>)}
+          orderListModalData.status==='waiting'&&(<button disabled={disabled} className="bg-blue w-full text-white rounded-xl p-2 text-center font-semibold cursor-pointer mt-2" onClick={()=>updateWaiting()}>Ready to serve</button>)}
         {
-          orderListModalData.status==='ready to serve'&&(<button disabled={disabled} className="bg-blue w-full text-white rounded-xl p-2 text-center font-semibold cursor-pointer mt-2" onClick={()=>updateReadyToServe()}>Update Status</button>)}
+          orderListModalData.status==='ready to serve'&&(<button disabled={disabled} className="bg-blue w-full text-white rounded-xl p-2 text-center font-semibold cursor-pointer mt-2" onClick={()=>updateReadyToServe()}>Served</button>)}
           {
           orderListModalData.status==='served'&&(
             <>
