@@ -65,7 +65,7 @@ function OrderList() {
           <p className="w-1/6 text-center">Items</p>
           <p className="w-1/6 text-center">Table</p>
           <p className="w-1/6 text-center">Status</p>
-          <p className="w-1/6 text-center">View</p>
+          <p className="w-1/6 text-center">Edit</p>
         </div>
         <div className="max-h-[34.5em] overflow-y-auto">
           {selectedOption === "all"
