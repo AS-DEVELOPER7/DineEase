@@ -32,7 +32,7 @@ var myDate=date.getDate() + '/' + (date.getMonth()+1) + '/' + date.getFullYear()
       totalPayment:totalPayment
     })
     await setShowBillsModal(true)
-    console.log(showBillsModal)
+//     console.log(showBillsModal)
     }
   return (
     <div className={`${id%2===0?'bg-slate-100':''} flex rounded-xl items-center justify-between p-2`}>
