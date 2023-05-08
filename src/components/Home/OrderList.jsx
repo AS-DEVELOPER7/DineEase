@@ -11,7 +11,7 @@ function OrderList() {
       const sortedData=data.docs.sort((a,b)=>b._document.createTime.timestamp.seconds-a._document.createTime.timestamp.seconds)
      setOrdersList(sortedData)
     
-     console.log(data.docs)
+//      console.log(data.docs)
     })
   },[])
   return (
