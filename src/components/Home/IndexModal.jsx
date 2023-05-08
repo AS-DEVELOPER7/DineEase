@@ -11,7 +11,7 @@ import { db } from '../../../firebaseconfig';
 function IndexModal() {
   const[disabled,setDisabled]=useState(false)
   const { showModal, setShowModal, modalData } = useStateContext();
-  console.log(modalData)
+//   console.log(modalData)
   const generateBill=()=>{
     setDisabled(true)
     const loading = toast.loading('Generating bill!',top)
