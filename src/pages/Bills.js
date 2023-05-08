@@ -16,7 +16,7 @@ function Bills() {
       (data) => {
         setOrdersList(data.docs);
 
-        console.log(data.docs);
+//         console.log(data.docs);
       }
     );
   }, []);
