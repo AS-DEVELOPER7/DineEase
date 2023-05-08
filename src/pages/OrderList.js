@@ -26,7 +26,7 @@ function OrderList() {
         );
         setOrdersList(sortedData);
 
-        console.log(data.docs);
+//         console.log(data.docs);
       }
     );
   }, []);
