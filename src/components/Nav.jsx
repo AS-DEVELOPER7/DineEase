@@ -10,7 +10,6 @@ import { signOut } from "firebase/auth";
 import { toast } from "react-hot-toast";
 import { AiOutlineUserAdd } from "react-icons/ai";
 function Nav() {
-  const user=auth.currentUser.email
   const navigation = [
     {
       name: "Dashboard",
@@ -47,8 +46,8 @@ function Nav() {
         <Image src="/AS-logo.png" alt="me" width="33" height="33" />
       </Link>
       <div className="flex items-center gap-x-7">
-      
-        { navigation.map((data, i) => (
+        {
+        navigation.map((data, i) => (
           <Link href={data.route} className="flex items-center gap-x-2" key={i}>
             <>
               <data.icon
@@ -65,13 +64,14 @@ function Nav() {
             </>
           </Link>
         ))}
-       
+        
       </div>
       <div className="cursor-pointer" onClick={() => setShowdropDown(!showdropdown)}>
         <Image src="/profile-placeholder.png" alt="me" width="45" height="45" />
       </div>
       {showdropdown && (
         <div className="absolute right-5 top-16 bg-slate-50 border-2 font-semibold border-gray p-2 rounded-lg">
+          
           <div className="flex items-center gap-x-1 text-sm cursor-pointer" >
             <MdLogout />
             Logout
