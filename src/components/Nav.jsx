@@ -105,7 +105,7 @@ function Nav() {
             New User
           </Link>
           <div className="h-[1.5px] bg-zinc-400 my-1"/></>}
-          <div className="flex items-center gap-x-1 text-sm cursor-pointer" onClick={()=>handleLogout()}>
+          <div className="flex items-center gap-x-1 text-sm cursor-pointer" >
             <MdLogout />
             Logout
           </div>
